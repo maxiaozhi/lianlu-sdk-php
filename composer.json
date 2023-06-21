@@ -1,0 +1,24 @@
+{
+    "name": "lianlu/lianlu",
+    "description": "lianlu sdk",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lianlu\\Lianlu\\": "src/",
+            "Lianlu\\Lianlu\\Clients\\": "src/Clients",
+            "Lianlu\\Lianlu\\Common\\": "src/Common",
+            "Lianlu\\Lianlu\\models\\": "src/models"
+        }
+    },
+    "authors": [
+        {
+            "name": "ll"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*"
+    }
+}
