@@ -40,13 +40,13 @@ class Template extends Common
         return $this->values['TemplateType'];
     }
 
-    public function SetSessionContent($value)
+    public function SetSessionContext($value)
     {
-        $this->values['SessionContent'] = $value;
+        $this->values['SessionContext'] = $value;
     }
-    public function GetSessionContent()
+    public function GetSessionContext()
     {
-        return $this->values['SessionContent'];
+        return $this->values['SessionContext'];
     }
 
 }

@@ -102,6 +102,28 @@ class Product
     }
 
     /**
+     * 获取模板
+     * @return bool|string
+     * @throws LianLuException
+     * @var mixed
+     */
+    public static function TemplateGetById(Credential $credential, int $TemplateId)
+    {
+        $url = Constants::HTTP.Constants::DOMAIN_API.self::$prefix."product/template/getById";
+        $inputObj = new models\Template();
+        $inputObj->SetAppid($credential->GetAppId());
+        $inputObj->SetMch_id($credential->GetMchId());
+        $inputObj->SetSignType(self::$SignType);
+        $inputObj->SetVersion(self::$version);
+        $inputObj->SetTemplateId($TemplateId);
+        $inputObj->SetTimeStamp(Utils::getMillisecond());
+
+        $inputObj->SetSign($inputObj, $credential->getAppKey());
+        $json = $inputObj->ToJson();
+        return Request::postCurl($json, $url);
+    }
+
+    /**
      * 创建短信模板
      * @param Credential $credential
      * @param models\Template $template
@@ -141,7 +163,7 @@ class Product
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
         $inputObj->SetVersion(self::$version);
-        $inputObj->SetSessionContent($template->GetSessionContent());
+        $inputObj->SetSessionContext($template->GetSessionContext());
         $inputObj->SetTemplateType($template->GetTemplateType());
         $inputObj->SetTemplateName($template->GetTemplateName());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
