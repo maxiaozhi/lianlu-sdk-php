@@ -35,6 +35,9 @@ class RCSSend
         $inputObj->SetPhoneNumberSet($rcs->GetPhoneNumberSet());
         $inputObj->SetTemplateId($rcs->GetTemplateId());
 
+        if(@$rcs->GetVersion()) {
+            $inputObj->SetVersion($rcs->GetVersion());
+        }
         if(@$rcs->GetTaskTime()) {
             $inputObj->SetTaskTime($rcs->GetTaskTime());
         }
@@ -66,6 +69,9 @@ class RCSSend
         $inputObj->SetTemplateParamSet($rcs->GetTemplateParamSet());
         $inputObj->SetTemplateId($rcs->GetTemplateId());
 
+        if(@$rcs->GetVersion()) {
+            $inputObj->SetVersion($rcs->GetVersion());
+        }
         if(@$rcs->GetTaskTime()) {
             $inputObj->SetTaskTime($rcs->GetTaskTime());
         }

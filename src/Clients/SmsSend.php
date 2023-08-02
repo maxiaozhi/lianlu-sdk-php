@@ -35,6 +35,9 @@ class SmsSend{
         $inputObj->SetSessionContext($sms->GetSessionContext());
         $inputObj->SetType("1");
 
+        if(@$sms->GetVersion()) {
+            $inputObj->SetVersion($sms->GetVersion());
+        }
         if(@$sms->GetTaskTime()) {
             $inputObj->SetTaskTime($sms->GetTaskTime());
         }
@@ -68,7 +71,9 @@ class SmsSend{
         $inputObj->SetContextParamSet($sms->GetContextParamSet());
         $inputObj->SetType("2");
 
-
+        if(@$sms->GetVersion()) {
+            $inputObj->SetVersion($sms->GetVersion());
+        }
         if(@$sms->GetTemplateId()) {
             $inputObj->SetTaskTime($sms->GetTaskTime());
         }
@@ -106,6 +111,9 @@ class SmsSend{
         $inputObj->SetTemplateParamSet($sms->GetTemplateParamSet());
         $inputObj->SetType("3");
 
+        if(@$sms->GetVersion()) {
+            $inputObj->SetVersion($sms->GetVersion());
+        }
         if(@$sms->GetTaskTime()) {
             $inputObj->SetTaskTime($sms->GetTaskTime());
         }
