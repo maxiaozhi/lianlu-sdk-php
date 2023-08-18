@@ -111,6 +111,14 @@ class SmsSend{
         $inputObj->SetTemplateParamSet($sms->GetTemplateParamSet());
         $inputObj->SetType("3");
 
+        if(@$sms->GetSignId()) {
+            $inputObj->SetSignId($sms->GetSignId());
+        }
+
+        if(@$sms->GetSignName()) {
+            $inputObj->SetSignName($sms->GetSignName());
+        }
+
         if(@$sms->GetVersion()) {
             $inputObj->SetVersion($sms->GetVersion());
         }

@@ -76,4 +76,14 @@ class Sms extends Common
     {
         return $this->values['Type'];
     }
+
+    public function SetSignId($value)
+    {
+        $this->values['SignId'] = $value;
+    }
+
+    public function GetSignId()
+    {
+        return $this->values['SignId'];
+    }
 }
