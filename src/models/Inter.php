@@ -31,4 +31,12 @@ class Inter extends Common
         return $this->values['TemplateId'];
     }
 
+    public function SetSessionContext($value)
+    {
+        $this->values['SessionContext'] = $value;
+    }
+    public function GetSessionContext()
+    {
+        return $this->values['SessionContext'];
+    }
 }

@@ -31,8 +31,14 @@ class InterSend{
         $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($inter->GetPhoneNumberSet());
-        $inputObj->SetTemplateId($inter->GetTemplateId());
-        $inputObj->SetTemplateParamSet($inter->GetTemplateParamSet());
+        if(@$inter->GetSessionContext()) {
+            $inputObj->SetSessionContext($inter->GetSessionContext());
+        }
+        else {
+            $inputObj->SetTemplateId($inter->GetTemplateId());
+            $inputObj->SetTemplateParamSet($inter->GetTemplateParamSet());
+
+        }
 
         if(@$inter->GetTaskTime()) {
             $inputObj->SetTaskTime($inter->GetTaskTime());
