@@ -2,7 +2,7 @@
 namespace Lianlu\Lianlu\Common;
 
 class Constants {
-    const Version = "1.1.0";
+    const Version = "1.2.0";
     const HTTPS = "https://";
     const HTTP = "http://";
     const DOMAIN_API = "apis.shlianlu.com/";

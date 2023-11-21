@@ -12,7 +12,7 @@ use Lianlu\Lianlu\models\Sign;
 use Lianlu\Lianlu\models\Sms;
 
 
-$cred = new Credential("", "", "", "1.2.0");
+$cred = new Credential("", "", "");
 // getReport
 //$input = new \Lianlu\Lianlu\models\Report();
 //$input->SetTaskId("202211092009070002727");

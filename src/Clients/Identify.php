@@ -31,7 +31,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetIdNum($identification->GetIdNum());
@@ -56,7 +56,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetIdNum($identification->GetIdNum());
@@ -83,7 +83,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetPhone($identification->GetPhone());
@@ -108,7 +108,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetPhone($identification->GetPhone());
@@ -134,7 +134,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetPhone($identification->GetPhone());
@@ -160,7 +160,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetBankNum($identification->GetBankNum());
@@ -185,7 +185,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetBankNum($identification->GetBankNum());
@@ -211,7 +211,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetBankNum($identification->GetBankNum());
@@ -237,7 +237,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetBankNum($identification->GetBankNum());
@@ -264,7 +264,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetName($identification->GetName());
         $inputObj->SetBankNum($identification->GetBankNum());
@@ -291,7 +291,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetImage($identification->GetImage());
         $inputObj->SetIdNum($identification->GetIdNum());
@@ -317,7 +317,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhone($identification->GetPhone());
 
@@ -341,7 +341,7 @@ class Identify
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhone($identification->GetPhone());
 

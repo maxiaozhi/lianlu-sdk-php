@@ -28,7 +28,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
 
         $inputObj->SetSign($inputObj, $credential->getAppKey());
@@ -49,7 +49,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
 
         $inputObj->SetSign($inputObj, $credential->getAppKey());
@@ -71,7 +71,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetContent($sign->GetContent());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
 
@@ -93,7 +93,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
 
         $inputObj->SetSign($inputObj, $credential->getAppKey());
@@ -114,7 +114,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTemplateId($TemplateId);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
 
@@ -137,7 +137,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetContent($template->GetContent());
         $inputObj->SetTemplateName($template->GetTemplateName());
         $inputObj->SetSignId($template->GetSignId());
@@ -162,7 +162,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetSessionContext($template->GetSessionContext());
         $inputObj->SetTemplateType($template->GetTemplateType());
         $inputObj->SetTemplateName($template->GetTemplateName());
@@ -187,7 +187,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetTaskId($report->GetTaskId());
 
@@ -217,7 +217,7 @@ class Product
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetTaskId($report->GetTaskId());
 

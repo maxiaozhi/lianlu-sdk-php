@@ -28,7 +28,7 @@ class SmsSend{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($sms->GetPhoneNumberSet());
         $inputObj->SetSignName($sms->GetSignName());
@@ -64,7 +64,7 @@ class SmsSend{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetSessionContextSet($sms->GetSessionContextSet());
         $inputObj->SetSignName($sms->GetSignName());
@@ -104,7 +104,7 @@ class SmsSend{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion($credential->getVersion());
+        $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($sms->GetPhoneNumberSet());
         $inputObj->SetTemplateId($sms->GetTemplateId());
