@@ -28,7 +28,7 @@ class VoiceSend{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($voice->GetPhoneNumberSet());
         $inputObj->SetTemplateId($voice->GetTemplateId());
@@ -60,7 +60,7 @@ class VoiceSend{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($voice->GetPhoneNumberSet());
         $inputObj->SetSessionContext($voice->GetSessionContext());

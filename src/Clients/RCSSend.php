@@ -30,7 +30,7 @@ class RCSSend
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($rcs->GetPhoneNumberSet());
         $inputObj->SetTemplateId($rcs->GetTemplateId());
@@ -64,7 +64,7 @@ class RCSSend
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetTemplateParamSet($rcs->GetTemplateParamSet());
         $inputObj->SetTemplateId($rcs->GetTemplateId());

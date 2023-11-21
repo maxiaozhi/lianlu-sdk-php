@@ -11,10 +11,13 @@ class Credential
 
     private $isHttp;
 
-    public function __construct($mchId, $appId, $appKey, $isHttp = false){
+    private $version;
+
+    public function __construct($mchId, $appId, $appKey, $version = '1.1.0', $isHttp = false){
         $this->mchId = $mchId;
         $this->appId = $appId;
         $this->appKey = $appKey;
+        $this->version = $version;
         $this->isHttp = $isHttp;
     }
 
@@ -80,6 +83,22 @@ class Credential
     public function setIsHttp($isHttp)
     {
         $this->isHttp = $isHttp;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * @param mixed $version
+     */
+    public function setVersion($version): void
+    {
+        $this->version = $version;
     }
 
 

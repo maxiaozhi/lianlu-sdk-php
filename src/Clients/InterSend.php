@@ -28,7 +28,7 @@ class InterSend{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetPhoneNumberSet($inter->GetPhoneNumberSet());
         if(@$inter->GetSessionContext()) {

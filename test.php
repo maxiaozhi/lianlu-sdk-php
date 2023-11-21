@@ -12,7 +12,7 @@ use Lianlu\Lianlu\models\Sign;
 use Lianlu\Lianlu\models\Sms;
 
 
-$cred = new Credential("", "", "");
+$cred = new Credential("", "", "", "1.2.0");
 // getReport
 //$input = new \Lianlu\Lianlu\models\Report();
 //$input->SetTaskId("202211092009070002727");
@@ -24,10 +24,11 @@ $cred = new Credential("", "", "");
 //}
 
 // send internal sms
-//$input = new Inter();
-//$input->SetPhoneNumberSet(["+447458196165"]);
-//$input->SetTemplateId(10185);
-//$input->SetTemplateParamSet(["1","2"]);
+$input = new Inter();
+$input->SetPhoneNumberSet(["+447458196165"]);
+$input->SetTemplateId(10185);
+$input->SetTemplateParamSet(["1","2"]);
+$result = InterSend::Send($cred, $input);
 
 // send normal sms
 //$input = new Sms();

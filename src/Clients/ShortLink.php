@@ -28,7 +28,7 @@ class ShortLink{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetShortName($short->GetShortName());
         $inputObj->SetUrl($short->GetUrl());
@@ -66,7 +66,7 @@ class ShortLink{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetShortName($short->GetShortName());
         $inputObj->SetUrl($short->GetUrl());
@@ -109,7 +109,7 @@ class ShortLink{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetId($short->GetId());
 
@@ -131,7 +131,7 @@ class ShortLink{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
 
         $inputObj->SetSign($inputObj, $credential->getAppKey());
@@ -153,7 +153,7 @@ class ShortLink{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetId($short->GetId());
         $inputObj->SetRows("100");
@@ -202,7 +202,7 @@ class ShortLink{
         $inputObj->SetAppid($credential->GetAppId());
         $inputObj->SetMch_id($credential->GetMchId());
         $inputObj->SetSignType(self::$SignType);
-        $inputObj->SetVersion(self::$version);
+        $inputObj->SetVersion($credential->getVersion());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
         $inputObj->SetId($short->GetId());
 
