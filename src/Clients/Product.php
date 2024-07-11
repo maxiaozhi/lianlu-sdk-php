@@ -219,7 +219,7 @@ class Product
         $inputObj->SetSignType(self::$SignType);
         $inputObj->SetVersion(self::$version);
         $inputObj->SetTimeStamp(Utils::getMillisecond());
-        $inputObj->SetTaskId($report->GetTaskId());
+        $inputObj->SetTaskId($report->GetDate());
 
         if(@$report->GetPageNo()) {
             $inputObj->SetPageNo($report->GetPageNo());

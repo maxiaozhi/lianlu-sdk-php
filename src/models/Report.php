@@ -22,6 +22,16 @@ class Report extends Common
         return $this->values['pageNo'];
     }
 
+    public function GetDate()
+    {
+        return $this->values['Date'];
+    }
+
+    public function SetDate($value)
+    {
+        $this->values['Date'] = $value;
+    }
+
     public function GetTaskId()
     {
         return $this->values['TaskId'];

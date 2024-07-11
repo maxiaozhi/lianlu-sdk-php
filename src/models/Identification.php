@@ -6,11 +6,11 @@ class Identification extends Common
 {
     public function SetName($value)
     {
-        $this->values['Name'] = $value;
+        $this->values['name'] = $value;
     }
     public function GetName()
     {
-        return $this->values['Name'];
+        return $this->values['name'];
     }
 
     public function SetIdNum($value)
