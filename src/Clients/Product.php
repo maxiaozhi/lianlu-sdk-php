@@ -74,6 +74,13 @@ class Product
         $inputObj->SetVersion(self::$version);
         $inputObj->SetContent($sign->GetContent());
         $inputObj->SetTimeStamp(Utils::getMillisecond());
+        $inputObj->SetCreditCodeUrl($sign->GetCreditCodeUrl());
+        $inputObj->SetIdCardBack($sign->GetIdCardBack());
+        $inputObj->SetIdCardFront($sign->GetIdCardFront());
+
+        if(@$sign->GetRemark()) {
+            $inputObj->SetRemark($sign->GetRemark());
+        }
 
         $inputObj->SetSign($inputObj, $credential->getAppKey());
         $json = $inputObj->ToJson();
