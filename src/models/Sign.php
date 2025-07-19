@@ -13,6 +13,15 @@ class Sign extends Common
         return $this->values['content'];
     }
 
+    public function SetSignId($value)
+    {
+        $this->values['SignId'] = $value;
+    }
+    public function GetSignId()
+    {
+        return $this->values['SignId'];
+    }
+
     public function SetRemark($value)
     {
         $this->values['remark'] = $value;
