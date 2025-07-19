@@ -1,7 +1,7 @@
 {
-    "name": "lianlu/lianlu",
+    "name": "maxiaozhi/lianlu",
     "description": "lianlu sdk",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
